@@ -1,0 +1,14 @@
+server:  port: 8080
+
+spring:
+  jpa:
+    hibernate:
+       ddl-auto: update
+    properties:
+       hibernate:
+         dealect: org.hibernate.dialect.MySQL5Dialect
+  datasource:
+     driver-class-name: com.mysql.cj.jdbc.Driver
+     url: jdbc:mysql://localhost:3306/products?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC 
+     username: root
+     password: root           
